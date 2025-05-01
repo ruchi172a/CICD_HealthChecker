@@ -5,8 +5,8 @@ import os
 load_dotenv()
 
 # Get the GitHub token from the environment
-GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
+GITHUB_TOKEN = os.getenv("MY_GITHUB_PAT")
 
 # Optional: Raise error if token not found
 if not GITHUB_TOKEN:
-    raise ValueError("GITHUB_TOKEN not found in .env file")
+    raise ValueError("MY_GITHUB_PAT not found in environment variables")
